@@ -15,7 +15,7 @@ use rand_core::{CryptoRng, RngCore};
 #[cfg_attr(feature = "serde", serde(bound = "T: SigType"))]
 pub struct SigningKey<T: SigType> {
     sk: Scalar,
-    pk: VerificationKey<T>,
+    pub(crate) pk: VerificationKey<T>,
 }
 
 impl<'a, T: SigType> From<&'a SigningKey<T>> for VerificationKey<T> {
