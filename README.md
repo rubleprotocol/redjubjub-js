@@ -141,7 +141,7 @@ Generate keys and payment address by `sk`, and `d`.
 
 
 ## Signature
-We also provide methods to sign and verify signature for spend authority signature and binding signature.
+We also provide methods to sign and verify signature for spend authority signature.
 
 ### spend authority signature
 
