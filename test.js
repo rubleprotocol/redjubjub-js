@@ -2,9 +2,9 @@ const {
     generate_rk_by_ask,
     generate_spend_auth_sig,
     verify_spend_auth_sig,
-    generate_pk_by_sk,
-    generate_binding_sig,
-    verify_binding_sig,
+    // generate_pk_by_sk,
+    // generate_binding_sig,
+    // verify_binding_sig,
     generate_keys,
     generate_keys_by_sk,
     generate_keys_by_sk_d
@@ -14,14 +14,14 @@ const {
 var msg = "3b78fee6e956f915ffe082284c5f18640edca9c57a5f227e5f7d7eb65ad61502"
 var sk = "e3ebcba1531f6d9158d9c162660c5d7c04dadf77d85d7436a9c98b291ff69a09"
 //binding sigature
-const pk = generate_pk_by_sk(sk);
-console.log("pk " + pk)
-
-const sig = generate_binding_sig(sk, msg)
-console.log("binding signature is " + sig)
-
-var verify_binding_sig_res = verify_binding_sig(pk, msg, sig)
-console.log("Verify binding signature " + verify_binding_sig_res)
+// const pk = generate_pk_by_sk(sk);
+// console.log("pk " + pk)
+//
+// const sig = generate_binding_sig(sk, msg)
+// console.log("binding signature is " + sig)
+//
+// var verify_binding_sig_res = verify_binding_sig(pk, msg, sig)
+// console.log("Verify binding signature " + verify_binding_sig_res)
 
 //spend authority signature
 console.log("__________________spend authority signature________________________")

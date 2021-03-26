@@ -204,7 +204,7 @@ fn verify_auth_test() {
     assert!(verify_spend_auth_sig(rk, msg, sig));
 }
 
-#[wasm_bindgen]
+// #[wasm_bindgen]
 pub fn generate_pk_by_sk(sk_string: String) -> String {
     let mut sk_bytes = [0u8;32];
     match hex::decode_to_slice(sk_string, &mut sk_bytes) {
@@ -227,7 +227,7 @@ fn pk_test() {
     println!("pk {}", pk);
 }
 
-#[wasm_bindgen]
+// #[wasm_bindgen]
 pub fn generate_binding_sig(sk_string: String, message_hash_string: String) -> String {
     let mut sk_bytes = [0u8;32];
     match hex::decode_to_slice(sk_string, &mut sk_bytes) {
@@ -261,7 +261,7 @@ fn binding_sig_test() {
     println!("sig {}", sig);
 }
 
-#[wasm_bindgen]
+// #[wasm_bindgen]
 pub fn verify_binding_sig(pk_string: String, message_hash_string: String, signature_string: String) -> bool {
     let mut pk_bytes = [0u8;32];
     match hex::decode_to_slice(pk_string, &mut pk_bytes) {
