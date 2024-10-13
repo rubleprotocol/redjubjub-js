@@ -25,7 +25,7 @@ hex = "0.4"
 rand_core = "0.5"
 thiserror = "1.0"
 bech32 = "0.7"
-blake2b_simd = "0.5"
+blake2b_simd = "1.0"
 blake2s_simd = "0.5"
 jubjub = "0.3"
 serde = { version = "1", optional = true, features = ["derive"] }
