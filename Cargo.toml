@@ -23,7 +23,7 @@ features = ["nightly"]
 [dependencies]
 hex = "0.4"
 rand_core = "0.5"
-thiserror = "1.0"
+thiserror = "2.0"
 bech32 = "0.7"
 blake2b_simd = "0.5"
 blake2s_simd = "0.5"
